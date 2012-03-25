@@ -1,3 +1,12 @@
 site:
+  title: Maribase
   index:
     hello: 'Hello, World'
+  example:
+    text: 'Maid cafe, which have gained fame thanks to how their service attracts the hearts of otaku who tend not to have many opportunities to mix with women, have now become a sightseeing attraction in Akihabara.'
+  dir1:
+    hoge:
+      hoge: hoge
+  dir2:
+    fuga:
+      fuga: fuga

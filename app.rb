@@ -1,5 +1,6 @@
 #coding:utf-8
 require 'sinatra/base'
+#require 'sinatra/reloader' if ENV['RACK_ENV'] == 'development'
 require 'sinatra/r18n'
 require 'haml'
 
@@ -25,6 +26,10 @@ module MariBase
   end 
 
   class Web < Sinatra::Base
+    #configure :development do
+    #  register Sinatra::Reloader
+    #  also_reload './i18n/ja.yml'
+    #end
     register Sinatra::R18n
 
     routes = MariBase.route
